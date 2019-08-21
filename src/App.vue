@@ -2,7 +2,9 @@
   <div id="app">
     <div>
       <ul class="intop after">
-        <li v-for="(title,index) in tabTitle" @click="cur=index" :class="{active:cur==index}">{{title}}</li>
+        <li v-for="(title,index) in tabTitle" :key="index" @click="cur=index" :class="{active:cur==index}">
+          <router-link to="/">{{title}}</router-link>
+        </li>
       </ul>
     </div>
     <router-view/>
@@ -15,6 +17,7 @@ export default {
   data () {
     return {
       tabTitle: ['首页', '企业案例', '技术能力', '关于我们'],
+      nav: [{title:'首页',link:'/'}, {title:'店铺',link:'/Case'}, {title:'创业直播',link:'/skills'}, {title:'我的',link:'/about'}],
       cur: 0
     }
   }
