@@ -16,10 +16,10 @@ export default {
   name: "App",
   data() {
     return {
-      tabTitle: ["我高了", "企业案例", "技术能力", "关于我们"],
+      tabTitle: ["1", "企业案例", "技术能力", "关于我们"],
       nav: [
-        { title: "首页", link: "/" },
-        { title: "店铺", link: "/Case" },
+        { title: "2", link: "/" },
+        { title: "2", link: "/Case" },
         { title: "创业直播", link: "/skills" },
         { title: "我的", link: "/about" }
       ],
