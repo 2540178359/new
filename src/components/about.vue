@@ -1,15 +1,15 @@
 <template>
-  <div class="head">
-    <h1>{{ msg }}</h1>
+  <div class="about">
+    <h1>{{msg}}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'about',
   data () {
     return {
-      msg: 'Welcome'
+      msg: 'Welcome to Your about'
     }
   }
 }
@@ -17,5 +17,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 </style>

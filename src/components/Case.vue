@@ -1,12 +1,14 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div class="case">
+    <div class="banner">
+      <img src="../assets/about1.jpg"/>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'case',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -17,5 +19,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 </style>
