@@ -2,6 +2,7 @@
   <div class="case">
     <div class="banner">
       <img src="../assets/about1.jpg"/>
+      我对应的是企业案例的导航选中
     </div>
   </div>
 </template>

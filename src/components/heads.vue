@@ -1,6 +1,7 @@
 <template>
   <div id="heads">
     <h1>{{ msg }}</h1>
+    我对应的是首页的导航选中
   </div>
 </template>
 

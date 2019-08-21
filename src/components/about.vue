@@ -1,6 +1,7 @@
 <template>
   <div class="about">
     <h1>{{msg}}</h1>
+    我对应的是关于我们的导航选中
   </div>
 </template>
 

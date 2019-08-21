@@ -1,6 +1,7 @@
 <template>
   <div class="skills">
     <h1>{{msg}}</h1>
+    我对应的是技能的导航选中
   </div>
 </template>
 

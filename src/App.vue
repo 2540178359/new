@@ -2,8 +2,8 @@
   <div id="app">
     <div>
       <ul class="intop after">
-        <li v-for="(title,index) in tabTitle" :key="index" @click="cur=index" :class="{active:cur==index}">
-          <router-link to="/">{{title}}</router-link>
+        <li v-for="(item,index) in nav" :key="index" @click="cur=index" :class="{active:cur==index}">
+          <router-link :to="item.link">{{item.title}}</router-link>
         </li>
       </ul>
     </div>
@@ -16,12 +16,11 @@ export default {
   name: "App",
   data() {
     return {
-      tabTitle: ["1", "企业案例", "技术能力", "关于我们"],
       nav: [
-        { title: "2", link: "/" },
-        { title: "2", link: "/Case" },
-        { title: "创业直播", link: "/skills" },
-        { title: "我的", link: "/about" }
+        { title: "首页", link: "/" },
+        { title: "企业案例", link: "/Case" },
+        { title: "技术要点", link: "/skills" },
+        { title: "关于我们", link: "/about" }
       ],
       cur: 0
     };
