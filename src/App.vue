@@ -2,18 +2,7 @@
   <div id="app">
     <div>
       <ul class="intop after">
-        <li @click="cur=0" :class="{active:cur==0}">
-          <router-link to="/">首页</router-link>
-        </li>
-        <li @click="cur=1" :class="{active:cur==1}">
-          <router-link to="/Case">企业案例</router-link>
-        </li>
-        <li @click="cur=2" :class="{active:cur==2}">
-          <router-link to="/skills">技术能力</router-link>
-        </li>
-        <li @click="cur=3" :class="{active:cur==3}">
-          <router-link to="/about">关于我们</router-link>
-        </li>
+        <li v-for="(title,index) in tabTitle" @click="cur=index" :class="{active:cur==index}">{{title}}</li>
       </ul>
     </div>
     <router-view/>
@@ -26,7 +15,6 @@ export default {
   data () {
     return {
       tabTitle: ['首页', '企业案例', '技术能力', '关于我们'],
-      tabMain: ['内容一', '内容二', '内容三', '内容四'],
       cur: 0
     }
   }
